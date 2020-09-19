@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-simple-controller",
+  "version": "1.0.0",
+  "description": "NodeJS Simple Controller by Cheikna",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceiko94/nodejs-simple-controller.git"
+  },
+  "author": "DANSOKO Cheikna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceiko94/nodejs-simple-controller/issues"
+  },
+  "homepage": "https://github.com/ceiko94/nodejs-simple-controller#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  }
+}
