@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title><%=title%></title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="masthead">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            <%=title%>
+          </h1>
+          <h5>
+            <%=schoolSubject%>
+          </h5>
+        </div>
+      </div>
+    </div><!-- /cont -->
+  </div>
+
+  <br><br>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <form method="POST" action="/create-all">
+          <button type="submit" class="btn btn-success btn-lg btn-block">Ajouter tous les livres</button>
+        </form>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Les livres</h1>
+        <hr>
+        <br>
+        <div class="panel">
+          <div class="panel-body">
+            <!--/stories-->
+            <% for(let book of books){%>
+            <div class="row">
+              <div class="col-md-10 col-sm-9">
+                <h3>Title : <%=book.title%> </h3>
+                <div class="row">
+                  <div class="col-xs-9">
+                    <h4>
+                      <small style="font-family:courier,'new courier';" class="text-muted">Author : <%=book.author%> •
+                        Genre : <%=book.genre%></small>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <% }%>
+            <!--/stories-->
+          </div>
+        </div>
+      </div>
+      <!--/col-12-->
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="pull-right">Built with at <a href="http://www.bootply.com">Bootply</a> - Personnalis&eacute; par
+            &copy; Cheikna DANSOKO -
+            Septembre 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- script references -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

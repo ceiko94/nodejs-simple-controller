@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/ceiko94/nodejs-simple-controller#readme",
   "dependencies": {
+    "bootstrap": "^4.5.2",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.10.6"
+    "jquery": "^3.5.1",
+    "mysql": "^2.18.1"
   }
 }
